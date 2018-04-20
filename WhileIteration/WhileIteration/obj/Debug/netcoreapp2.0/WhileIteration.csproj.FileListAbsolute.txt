@@ -1,0 +1,11 @@
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\bin\Debug\netcoreapp2.0\WhileIteration.deps.json
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\bin\Debug\netcoreapp2.0\WhileIteration.runtimeconfig.json
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\bin\Debug\netcoreapp2.0\WhileIteration.runtimeconfig.dev.json
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\bin\Debug\netcoreapp2.0\WhileIteration.dll
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\bin\Debug\netcoreapp2.0\WhileIteration.pdb
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\obj\Debug\netcoreapp2.0\WhileIteration.csprojResolveAssemblyReference.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\obj\Debug\netcoreapp2.0\WhileIteration.csproj.CoreCompileInputs.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\obj\Debug\netcoreapp2.0\WhileIteration.AssemblyInfoInputs.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\obj\Debug\netcoreapp2.0\WhileIteration.AssemblyInfo.cs
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\obj\Debug\netcoreapp2.0\WhileIteration.dll
+C:\Users\Student40\source\repos\SD-104-CSharp\WhileIteration\WhileIteration\obj\Debug\netcoreapp2.0\WhileIteration.pdb
