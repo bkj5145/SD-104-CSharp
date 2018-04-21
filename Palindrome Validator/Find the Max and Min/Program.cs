@@ -15,7 +15,7 @@ namespace Find_the_Max_and_Min
             //hint #1
             int min;
             int max;
-            
+
             //hint #2
             // min and your max is going to start as the first value in your array.  So arry[0]
 
@@ -23,7 +23,45 @@ namespace Find_the_Max_and_Min
             //min means array[position] < min
             //max means array[position] > max
 
+            Console.Write("How many numbers are in your array?: ");
+            int enteredCount;
+            while (Int32.TryParse(Console.ReadLine(), out enteredCount) == false)
+            {
+                Console.WriteLine("Not a number. Please enter a number: ");
+            }
+            int[] minandMaxArray = new int[enteredCount];
 
+            for (int count = 0; count < minandMaxArray.Length; count++)
+            {
+                Console.Write("Please enter the value for number " + (count + 1) + ": ");
+                while (Int32.TryParse(Console.ReadLine(), out enteredCount) == false)
+                {
+                    Console.WriteLine("Not a number. Please enter a number: ");
+                }
+                minandMaxArray[count] = enteredCount;
+            }
+
+            min = minandMaxArray[0];
+            max = minandMaxArray[0];
+
+            for (int i = 0; i < minandMaxArray.Length; i++)
+            {
+
+                if (minandMaxArray[i] < min)
+                {
+                    min = minandMaxArray[i];
+                }
+                if (minandMaxArray[i] > max)
+                {
+                    max = minandMaxArray[i];
+                }
+            }
+
+            Console.WriteLine("The minimum value is: " + min);
+            Console.WriteLine("The max value is: " + max);
+
+
+            Console.ReadLine();
         }
     }
 }
