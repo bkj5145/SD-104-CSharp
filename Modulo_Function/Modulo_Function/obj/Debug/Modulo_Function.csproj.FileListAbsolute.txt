@@ -1,0 +1,7 @@
+C:\Users\Student40\source\repos\SD-104-CSharp\Modulo_Function\Modulo_Function\bin\Debug\Modulo_Function.exe.config
+C:\Users\Student40\source\repos\SD-104-CSharp\Modulo_Function\Modulo_Function\bin\Debug\Modulo_Function.exe
+C:\Users\Student40\source\repos\SD-104-CSharp\Modulo_Function\Modulo_Function\bin\Debug\Modulo_Function.pdb
+C:\Users\Student40\source\repos\SD-104-CSharp\Modulo_Function\Modulo_Function\obj\Debug\Modulo_Function.csprojResolveAssemblyReference.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\Modulo_Function\Modulo_Function\obj\Debug\Modulo_Function.csproj.CoreCompileInputs.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\Modulo_Function\Modulo_Function\obj\Debug\Modulo_Function.exe
+C:\Users\Student40\source\repos\SD-104-CSharp\Modulo_Function\Modulo_Function\obj\Debug\Modulo_Function.pdb

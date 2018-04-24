@@ -1,0 +1,7 @@
+C:\Users\Student40\source\repos\SD-104-CSharp\Assignment 7 - Methods\Assignment 7 - Methods\obj\Debug\Assignment 7 - Methods.csprojResolveAssemblyReference.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\Assignment 7 - Methods\Assignment 7 - Methods\obj\Debug\Assignment 7 - Methods.csproj.CoreCompileInputs.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\Assignment 7 - Methods\Assignment 7 - Methods\bin\Debug\Assignment 7 - Methods.exe.config
+C:\Users\Student40\source\repos\SD-104-CSharp\Assignment 7 - Methods\Assignment 7 - Methods\bin\Debug\Assignment 7 - Methods.exe
+C:\Users\Student40\source\repos\SD-104-CSharp\Assignment 7 - Methods\Assignment 7 - Methods\bin\Debug\Assignment 7 - Methods.pdb
+C:\Users\Student40\source\repos\SD-104-CSharp\Assignment 7 - Methods\Assignment 7 - Methods\obj\Debug\Assignment 7 - Methods.exe
+C:\Users\Student40\source\repos\SD-104-CSharp\Assignment 7 - Methods\Assignment 7 - Methods\obj\Debug\Assignment 7 - Methods.pdb
