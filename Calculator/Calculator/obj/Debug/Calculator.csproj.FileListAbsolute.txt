@@ -1,0 +1,7 @@
+C:\Users\Student40\source\repos\SD-104-CSharp\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Student40\source\repos\SD-104-CSharp\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Student40\source\repos\SD-104-CSharp\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Student40\source\repos\SD-104-CSharp\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Student40\source\repos\SD-104-CSharp\Calculator\Calculator\obj\Debug\Calculator.pdb

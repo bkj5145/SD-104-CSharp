@@ -1,0 +1,2 @@
+C:\Users\Student40\source\repos\SD-104-CSharp\SamplePrograms\SamplePrograms\obj\Debug\SamplePrograms.csprojResolveAssemblyReference.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\SamplePrograms\SamplePrograms\obj\Debug\SamplePrograms.csproj.CoreCompileInputs.cache

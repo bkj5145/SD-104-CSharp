@@ -1,0 +1,31 @@
+﻿@model List<TextBasedRPG.Monster>
+
+@{
+    ViewBag.Title = "About";
+}
+
+<table>
+    <tr>
+        <th>Monster Name:</th>
+        <th>Level:</th>
+        <th>Health:</th>
+        <th>Attack Power:</th>
+        <th>Range:</th>
+    </tr>
+    @foreach (TextBasedRPG.Monster monster in (dynamic) Model)
+    {
+    <tr>
+        <td>@monster.name</td>
+        <td>@monster.monsterLevel</td>
+        <td>@monster.monsterhealth</td>
+        <td>@monster.attackPower</td>
+        <td>@monster.range</td>
+    </tr>
+    }
+
+</table>
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>

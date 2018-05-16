@@ -1,0 +1,7 @@
+c:\users\student40\source\repos\HW - Conversion hw1 enhancement\HW - Conversion hw1 enhancement\obj\Debug\HW - Conversion hw1 enhancement.csprojResolveAssemblyReference.cache
+c:\users\student40\source\repos\HW - Conversion hw1 enhancement\HW - Conversion hw1 enhancement\obj\Debug\HW - Conversion hw1 enhancement.csproj.CoreCompileInputs.cache
+c:\users\student40\source\repos\HW - Conversion hw1 enhancement\HW - Conversion hw1 enhancement\bin\Debug\HW - Conversion hw1 enhancement.exe.config
+c:\users\student40\source\repos\HW - Conversion hw1 enhancement\HW - Conversion hw1 enhancement\bin\Debug\HW - Conversion hw1 enhancement.exe
+c:\users\student40\source\repos\HW - Conversion hw1 enhancement\HW - Conversion hw1 enhancement\bin\Debug\HW - Conversion hw1 enhancement.pdb
+c:\users\student40\source\repos\HW - Conversion hw1 enhancement\HW - Conversion hw1 enhancement\obj\Debug\HW - Conversion hw1 enhancement.exe
+c:\users\student40\source\repos\HW - Conversion hw1 enhancement\HW - Conversion hw1 enhancement\obj\Debug\HW - Conversion hw1 enhancement.pdb

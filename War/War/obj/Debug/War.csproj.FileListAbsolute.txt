@@ -1,0 +1,7 @@
+C:\Users\Student40\source\repos\SD-104-CSharp\War\War\bin\Debug\War.exe.config
+C:\Users\Student40\source\repos\SD-104-CSharp\War\War\bin\Debug\War.exe
+C:\Users\Student40\source\repos\SD-104-CSharp\War\War\bin\Debug\War.pdb
+C:\Users\Student40\source\repos\SD-104-CSharp\War\War\obj\Debug\War.csprojResolveAssemblyReference.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\War\War\obj\Debug\War.csproj.CoreCompileInputs.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\War\War\obj\Debug\War.exe
+C:\Users\Student40\source\repos\SD-104-CSharp\War\War\obj\Debug\War.pdb

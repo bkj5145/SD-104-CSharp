@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="RPGGameModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Hero">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Health" Type="int" Nullable="false" />
+          <Property Name="Lvl" Type="int" Nullable="false" />
+          <Property Name="AttackPower" Type="int" Nullable="false" />
+          <Property Name="CurrentExp" Type="int" />
+          <Property Name="Name" Type="varchar" MaxLength="250" />
+          <Property Name="Alive" Type="tinyint" />
+          <Property Name="Weapon" Type="int" />
+        </EntityType>
+        <EntityType Name="Monster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MonsterName" Type="varchar" MaxLength="250" />
+          <Property Name="Lvl" Type="int" />
+          <Property Name="AttackPower" Type="int" />
+          <Property Name="CurrentExp" Type="int" />
+          <Property Name="Alive" Type="tinyint" />
+          <Property Name="Health" Type="int" />
+          <Property Name="Weapon" Type="int" />
+        </EntityType>
+        <EntityType Name="Weapon">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="250" />
+          <Property Name="AttackValue" Type="int" />
+          <Property Name="Hands" Type="tinyint" />
+          <Property Name="AttackModifier" Type="int" />
+        </EntityType>
+        <Association Name="FK_Hero_Weapon">
+          <End Role="Weapon" Type="Self.Weapon" Multiplicity="0..1" />
+          <End Role="Hero" Type="Self.Hero" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Weapon">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Hero">
+              <PropertyRef Name="Weapon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Monster_Weapon">
+          <End Role="Weapon" Type="Self.Weapon" Multiplicity="0..1" />
+          <End Role="Monster" Type="Self.Monster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Weapon">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Monster">
+              <PropertyRef Name="Weapon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="RPGGameModelStoreContainer">
+          <EntitySet Name="Hero" EntityType="Self.Hero" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Monster" EntityType="Self.Monster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Weapon" EntityType="Self.Weapon" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Hero_Weapon" Association="Self.FK_Hero_Weapon">
+            <End Role="Weapon" EntitySet="Weapon" />
+            <End Role="Hero" EntitySet="Hero" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Monster_Weapon" Association="Self.FK_Monster_Weapon">
+            <End Role="Weapon" EntitySet="Weapon" />
+            <End Role="Monster" EntitySet="Monster" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RPGGameModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Hero">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Health" Type="Int32" Nullable="false" />
+          <Property Name="Lvl" Type="Int32" Nullable="false" />
+          <Property Name="AttackPower" Type="Int32" Nullable="false" />
+          <Property Name="CurrentExp" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Alive" Type="Byte" />
+          <Property Name="Weapon" Type="Int32" />
+          <NavigationProperty Name="Weapon1" Relationship="RPGGameModel.FK_Hero_Weapon" FromRole="Hero" ToRole="Weapon" />
+        </EntityType>
+        <EntityContainer Name="RPGGameEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Heroes" EntityType="Self.Hero" />
+          <EntitySet Name="Weapons" EntityType="RPGGameModel.Weapon" />
+          <EntitySet Name="Monsters" EntityType="RPGGameModel.Monster" />
+          <AssociationSet Name="FK_Hero_Weapon" Association="RPGGameModel.FK_Hero_Weapon">
+            <End Role="Weapon" EntitySet="Weapons" />
+            <End Role="Hero" EntitySet="Heroes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Monster_Weapon" Association="RPGGameModel.FK_Monster_Weapon">
+            <End Role="Weapon" EntitySet="Weapons" />
+            <End Role="Monster" EntitySet="Monsters" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Weapon">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="AttackValue" Type="Int32" />
+          <Property Name="Hands" Type="Byte" />
+          <Property Name="AttackModifier" Type="Int32" />
+          <NavigationProperty Name="Heroes" Relationship="RPGGameModel.FK_Hero_Weapon" FromRole="Weapon" ToRole="Hero" />
+          <NavigationProperty Name="Monsters" Relationship="RPGGameModel.FK_Monster_Weapon" FromRole="Weapon" ToRole="Monster" />
+        </EntityType>
+        <EntityType Name="Monster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MonsterName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Lvl" Type="Int32" />
+          <Property Name="AttackPower" Type="Int32" />
+          <Property Name="CurrentExp" Type="Int32" />
+          <Property Name="Alive" Type="Byte" />
+          <Property Name="Health" Type="Int32" />
+          <Property Name="Weapon" Type="Int32" />
+          <NavigationProperty Name="Weapon1" Relationship="RPGGameModel.FK_Monster_Weapon" FromRole="Monster" ToRole="Weapon" />
+        </EntityType>
+        <Association Name="FK_Hero_Weapon">
+          <End Type="RPGGameModel.Weapon" Role="Weapon" Multiplicity="0..1" />
+          <End Type="RPGGameModel.Hero" Role="Hero" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Weapon">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Hero">
+              <PropertyRef Name="Weapon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Monster_Weapon">
+          <End Type="RPGGameModel.Weapon" Role="Weapon" Multiplicity="0..1" />
+          <End Type="RPGGameModel.Monster" Role="Monster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Weapon">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Monster">
+              <PropertyRef Name="Weapon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RPGGameModelStoreContainer" CdmEntityContainer="RPGGameEntities">
+          <EntitySetMapping Name="Heroes">
+            <EntityTypeMapping TypeName="RPGGameModel.Hero">
+              <MappingFragment StoreEntitySet="Hero">
+                <ScalarProperty Name="Weapon" ColumnName="Weapon" />
+                <ScalarProperty Name="Alive" ColumnName="Alive" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Health" ColumnName="Health" />
+                <ScalarProperty Name="Lvl" ColumnName="Lvl" />
+                <ScalarProperty Name="AttackPower" ColumnName="AttackPower" />
+                <ScalarProperty Name="CurrentExp" ColumnName="CurrentExp" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Weapons">
+            <EntityTypeMapping TypeName="RPGGameModel.Weapon">
+              <MappingFragment StoreEntitySet="Weapon">
+                <ScalarProperty Name="AttackModifier" ColumnName="AttackModifier" />
+                <ScalarProperty Name="Hands" ColumnName="Hands" />
+                <ScalarProperty Name="AttackValue" ColumnName="AttackValue" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Monsters">
+            <EntityTypeMapping TypeName="RPGGameModel.Monster">
+              <MappingFragment StoreEntitySet="Monster">
+                <ScalarProperty Name="Weapon" ColumnName="Weapon" />
+                <ScalarProperty Name="Health" ColumnName="Health" />
+                <ScalarProperty Name="Alive" ColumnName="Alive" />
+                <ScalarProperty Name="CurrentExp" ColumnName="CurrentExp" />
+                <ScalarProperty Name="AttackPower" ColumnName="AttackPower" />
+                <ScalarProperty Name="Lvl" ColumnName="Lvl" />
+                <ScalarProperty Name="MonsterName" ColumnName="MonsterName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
