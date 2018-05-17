@@ -1,0 +1,7 @@
+C:\Users\Student40\source\repos\SD-104-CSharp\FruitApp\FruitApp\bin\Debug\FruitApp.exe.config
+C:\Users\Student40\source\repos\SD-104-CSharp\FruitApp\FruitApp\bin\Debug\FruitApp.exe
+C:\Users\Student40\source\repos\SD-104-CSharp\FruitApp\FruitApp\bin\Debug\FruitApp.pdb
+C:\Users\Student40\source\repos\SD-104-CSharp\FruitApp\FruitApp\obj\Debug\FruitApp.csprojResolveAssemblyReference.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\FruitApp\FruitApp\obj\Debug\FruitApp.csproj.CoreCompileInputs.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\FruitApp\FruitApp\obj\Debug\FruitApp.exe
+C:\Users\Student40\source\repos\SD-104-CSharp\FruitApp\FruitApp\obj\Debug\FruitApp.pdb
