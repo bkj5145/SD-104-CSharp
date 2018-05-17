@@ -2,10 +2,4 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Lab1/.vs/Lab1/v15/Server/sqlite3
-/Lab 2 Calculate Batting Average/Lab 2 Calculate Batting Average
-/Lab - Reverse Array/.vs/Lab - Reverse Array/v15/Server/sqlite3
-/Palindrome Validator/.vs/Palindrome Validator/v15/Server/sqlite3
-/Assignment 7 - Methods/.vs/Assignment 7 - Methods/v15/Server/sqlite3/db.lock
-/BriansTestMVC/.vs/BriansTestMVC/v15/Server/sqlite3
-/PolymorphismPractice
+/Assignment 7 - Methods/.vs/Assignment 7 - Methods/v15/Server/sqlite3
