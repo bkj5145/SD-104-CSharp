@@ -1,0 +1,11 @@
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\bin\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.deps.json
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\bin\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.runtimeconfig.json
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\bin\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.runtimeconfig.dev.json
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\bin\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.dll
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\bin\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.pdb
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\obj\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.csprojResolveAssemblyReference.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\obj\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.csproj.CoreCompileInputs.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\obj\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.AssemblyInfoInputs.cache
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\obj\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.AssemblyInfo.cs
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\obj\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.dll
+C:\Users\Student40\source\repos\SD-104-CSharp\Lab 2 Calculate Batting Average\Lab 2 Calculate Batting Average\obj\Debug\netcoreapp2.0\Lab 2 Calculate Batting Average.pdb
